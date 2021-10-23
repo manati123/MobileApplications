@@ -1,0 +1,23 @@
+{
+  "name": "mobileapplications",
+  "version": "1.0.0",
+  "description": "<h1 style=\"text-align:center\">Track interest</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manati123/MobileApplications.git"
+  },
+  "keywords": [],
+  "author": "manati123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manati123/MobileApplications/issues"
+  },
+  "homepage": "https://github.com/manati123/MobileApplications#readme",
+  "dependencies": {
+    "@ionic/cli": "^6.17.1"
+  }
+}
