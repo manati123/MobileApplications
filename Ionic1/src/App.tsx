@@ -21,19 +21,22 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { GenreProvider } from './pages/MusicProvider';
+import EditGenre from './pages/EditGenre';
+import GenreList from './pages/MusicList';
 
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
+    <GenreProvider>
+      <IonReactRouter>
+        <IonRouterOutlet>
+          <Route path="/genres" component={GenreList} exact={true} />
+          <Route path="/genre" component={EditGenre} exact={true} />
+          <Route path="/genre/:id" component={EditGenre} exact={true} />
+          <Route exact path="/" render={() => <Redirect to="/genres" />} />
+        </IonRouterOutlet>
+      </IonReactRouter>
+    </GenreProvider>
   </IonApp>
 );
 

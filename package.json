@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/manati123/MobileApplications#readme",
   "dependencies": {
-    "@ionic/cli": "^6.17.1"
+    "@ionic/cli": "^6.17.1",
+    "websocket": "^1.0.34"
   }
 }
